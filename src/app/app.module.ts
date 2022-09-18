@@ -6,11 +6,17 @@ import { AppComponent } from './app.component';
 import { DrinksListComponent } from './drinks-list/drinks-list.component';
 
 import { FormsModule  } from '@angular/forms';
+import { EnergydrinkAboutComponent } from './energydrink-about/energydrink-about.component';
+import { EnergydrinkDrinksComponent } from './energydrink-drinks/energydrink-drinks.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DrinksListComponent
+    DrinksListComponent,
+    EnergydrinkAboutComponent,
+    EnergydrinkDrinksComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
