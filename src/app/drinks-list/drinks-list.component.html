@@ -4,8 +4,11 @@
         <div><h1>{{drink.name}}</h1></div> 
         <img [src]="drink.image" [alt]="drink.name" class="image-drink">
             <div><h2>{{drink.type}}</h2></div>
-            <div class="price">{{drink.price | currency}}</div> 
-            <div [ngClass]="{'clearance':drink.clearance}"></div>
+            <div class="price">
+                <p>{{drink.price | currency}}</p>
+                <p [ngClass]="{'clearance':drink.clearance}" *ngIf="drink.clearance"> %OFF</p>
+            </div> 
+            <div ></div>
             <div class="sin-stock"> <span class="badge text-bg-warning" *ngIf="drink.stock == 0">SIN STOCK</span></div>
             <div class="contenedor-cantidad" *ngIf="drink.stock > 0">   
                 <button class="btn btn-primary btn-sm" (click)="downQuantity(drink)">-</button>
