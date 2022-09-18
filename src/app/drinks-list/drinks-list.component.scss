@@ -1,9 +1,80 @@
+.contenedor-lista {
+    display:flex;
+    gap:20px;
+    flex-wrap: wrap;
+}
+.contenedor-bebidas {
+    width: 250px;
+    border: solid 2px black;
+}
+.contenedor-lista>div {
+    border:1px;
+    padding: 25px 15px 20px;
+    box-shadow: 0 16px 32px 0 rgb(0 30 60 / 12%);
+    border-radius: 10px;
+    height: 550px;
+}
+.contenedor-lista div {
+    text-align: center;
+}
+.contenedor-lista h1 {
+    font-size:30px;
+}
+.contenedor-lista h2 {
+    font-size:22px;
+}
 img {
-    width:150px;
-    height: 250px;
+    width:125px;
+    height: 285px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.contenedor-cantidad {
+    margin-top:20px;
+}
+.contenedor-cantidad input {
+    width: 60px;
+    border-radius: 5px;
+    border:solid 1px rgb(187, 186, 186);
 }
 
 .clearance {
     border: solid 2px rgb(14, 196, 14);
     background-color: rgb(187, 243, 187);
 }
+
+.sin-stock {
+   margin-top:15px;
+}
+.text-bg-warning {
+    height:25px;
+}
+
+//Estilos contenedor bebidas (clases puestas con angular)
+.energy-drink {
+    background-color: rgb(255, 255, 255);
+}
+.tropical-edition {
+    background-color: rgb(254, 202, 4);
+}
+.tropical-edition h1, .tropical-edition h2, .sugarfree h1, .sugarfree h2,
+.monster h1, .monster h2, .monster-zerosugar h1, .monster-zerosugar h2 {
+    color:white;
+}
+.sugarfree {
+    background-color: rgb(0, 158, 223);
+}
+.monster {
+    background-color:#b0e569;;
+}
+.monster-zerosugar {
+    background-color:#b2d5e5;
+}
+

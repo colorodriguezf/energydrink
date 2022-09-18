@@ -1,21 +1,19 @@
 <h1>Lista de bebidas</h1>
-<table class="table">
-    <thead>
-        <tr>
-            <th>Imagen</th>
-            <th>Nombre</th>
-            <th>Tipo</th>
-            <th>Precio</th>
-            <th>Stock</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let drink of drinks" [ngClass]="{'clearance':drink.clearance}">
-            <td><img [src]="drink.image" [alt]="drink.name" class="image-drink"></td>
-            <td>{{drink.name}}</td>
-            <td>{{drink.type}}</td>
-            <td>{{drink.price | currency}}</td>
-            <td><span class="badge text-bg-warning" *ngIf="drink.stock == 0">SIN STOCK</span></td>
-        </tr>
-    </tbody>
-</table>
+<div class="contenedor-lista">
+    <div *ngFor="let drink of drinks" [ngClass]="drink.class" class="col-3">    
+        <div><h1>{{drink.name}}</h1></div> 
+        <img [src]="drink.image" [alt]="drink.name" class="image-drink">
+            <div><h2>{{drink.type}}</h2></div>
+            <div class="price">{{drink.price | currency}}</div> 
+            <div [ngClass]="{'clearance':drink.clearance}"></div>
+            <div class="sin-stock"> <span class="badge text-bg-warning" *ngIf="drink.stock == 0">SIN STOCK</span></div>
+            <div class="contenedor-cantidad" *ngIf="drink.stock > 0">   
+                <button class="btn btn-primary btn-sm" (click)="downQuantity(drink)">-</button>
+                    <input 
+                        type="number" 
+                        [(ngModel)]="drink.quantity"
+                        (keyup)="changeQuantity($event, drink)">
+                <button class="btn btn-primary btn-sm" (click)="upQuantity(drink)">+</button>
+            </div>            
+    </div>
+</div>

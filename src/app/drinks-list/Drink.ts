@@ -5,4 +5,6 @@ export interface Drink {
     stock: number;
     image: string;
     clearance: boolean;
+    class: string;
+    quantity: number;
 }
