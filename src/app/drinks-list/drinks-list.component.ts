@@ -65,19 +65,8 @@ export class DrinksListComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  upQuantity(drink: Drink): void {
-    if(drink.quantity < drink.stock) {
-      drink.quantity ++;
-    }
-  }
-  downQuantity(drink: Drink): void {
-    if(drink.quantity > 0) {
-      drink.quantity --;
-    }
-  }
-
-  changeQuantity(event:any, drink:Drink): void {
-    console.log(event);
+  maxReached(mensaje: string): void {
+    alert('mensaje');
   }
 
 }

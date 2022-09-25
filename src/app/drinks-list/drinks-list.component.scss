@@ -1,6 +1,6 @@
 .contenedor-lista {
     display:flex;
-    gap:20px;
+    gap:30px;
     flex-wrap: wrap;
 }
 .contenedor-bebidas {
@@ -12,6 +12,7 @@
     padding: 0px 10px 10px;
     box-shadow: 0 16px 32px 0 rgb(0 30 60 / 12%);
     border-radius: 10px;
+    width:280px;
     height: 450px;
 }
 .contenedor-lista div {
@@ -41,11 +42,13 @@ img {
 }
 
 .contenedor-cantidad {
+    display: flex;
+    justify-content: center;
     margin-top:10px;
+    height:auto;
 }
 .contenedor-cantidad input {
     max-width: 60px;
-    border-radius: 5px;
     border:solid 1px rgb(187, 186, 186);
 }
 
