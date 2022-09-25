@@ -46,7 +46,7 @@ export class InputIntegerComponent implements OnInit {
   }
 
   changeQuantity(event:any): void {
-    console.log(event);
+    //console.log(event);
     this.quantityChange.emit(this.quantity);
 
   }
