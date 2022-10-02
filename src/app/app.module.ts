@@ -6,10 +6,13 @@ import { AppComponent } from './app.component';
 import { DrinksListComponent } from './drinks-list/drinks-list.component';
 
 import { FormsModule  } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 import { EnergydrinkAboutComponent } from './energydrink-about/energydrink-about.component';
 import { EnergydrinkDrinksComponent } from './energydrink-drinks/energydrink-drinks.component';
 import { CartComponent } from './cart/cart.component';
 import { InputIntegerComponent } from './input-integer/input-integer.component';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +26,8 @@ import { InputIntegerComponent } from './input-integer/input-integer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

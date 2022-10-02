@@ -32,7 +32,7 @@ export class InputIntegerComponent implements OnInit {
       this.quantityChange.emit(this.quantity);
     }
     else {
-      this.maxReached.emit("Se alcanzo el maximo");
+      this.maxReached.emit("La cantidad maxima no puede superar el stock");
     }
   }
   downQuantity(): void {
@@ -41,7 +41,7 @@ export class InputIntegerComponent implements OnInit {
       this.quantityChange.emit(this.quantity);
     }
     else {
-      this.maxReached.emit("Se alcanzo el maximo");
+      this.maxReached.emit("La cantidad minima no puede ser menor que 0");
     }
   }
 
