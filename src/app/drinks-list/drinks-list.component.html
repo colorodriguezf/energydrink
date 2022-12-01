@@ -9,9 +9,9 @@
             </div> 
             <div></div>
             <div class="sin-stock"> <span class="badge text-bg-warning" *ngIf="drink.stock == 0">SIN STOCK</span></div>
-            <div>   
+            <div class="agregarCarrito">   
                <app-input-integer [(quantity)]="drink.quantity" [max]="drink.stock" (maxReached)="maxReached($event)" *ngIf="drink.stock > 0" class="contenedor-cantidad"></app-input-integer>
-                <button class="btn btn-primary btn-sm" (click)="addToCart(drink)" *ngIf="drink.stock > 0">Agregar al carrito</button>
+                <button class="btn btn-primary btn-sm btn-agregar" (click)="addToCart(drink)" *ngIf="drink.stock > 0">Agregar al carrito</button>
             </div>            
     </div>
 </div>
