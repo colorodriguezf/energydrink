@@ -5,12 +5,23 @@ margin-left:35px;
 .navbar{
     width:100%;
     margin-bottom:20px;
+    align-items: center;
+}
+.navbar-nav {
+    margin-left: 200px;
+    gap:40px;  
+
 }
 .navbar-brand {
     margin-left: 20px;
+    font-size:30px;
+    background: #4DCF02;
+    background: repeating-linear-gradient(to right, #4DCF02 0%, #AD08FF 51%, #AA47AD 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 a {
-    font-size:25px;
+    font-size:22px;
 }
 
 footer {

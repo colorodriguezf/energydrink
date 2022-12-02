@@ -22,7 +22,7 @@ export class DrinkCartService {
 
 
   addToCart(drink: Drink) {
-    let item: Drink = this._cartList.find((v1) => v1.type == drink.type);
+    let item: Drink = this._cartList.find((v1) => v1.type == drink.type && v1.name == drink.name);
     if (!item) {
       this._cartList.push({... drink}); //como no lo encontre, clono el objeto y hago el push
     }

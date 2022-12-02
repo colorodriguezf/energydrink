@@ -1,12 +1,17 @@
 h1 {
     font-size:1.5rem;
 }
-
+h2 {
+    font-size:18px;
+}
 .li-carrito {
+    display: flex;
     list-style: none;
     margin-top:10px;
-    font-size: 1.4rem;
+    font-size: 15px;
     text-align: left;
+    align-items: center;
+    gap:8px;
 }
 
 .image-drink-carrito {
@@ -18,4 +23,50 @@ h1 {
 
 span {
     font-weight: bold;
+}
+
+
+//Estilos contenedor bebidas (clases puestas con angular)
+.contenedor-card-cart {
+    width: fit-content;
+    min-width: 42px;
+    max-width: 42px;
+    min-height: 62px;
+    max-height: 62px;
+    padding: 10px;
+    border-radius: 6px;
+}
+.energy-drink {
+    background-color: rgb(255, 255, 255);
+}
+.tropical-edition {
+    background-color: rgb(254, 202, 4);
+}
+.tropical-edition h1, .tropical-edition h2, .sugarfree h1, .sugarfree h2,
+.monster h1, .monster h2, .monster-zerosugar h1, .monster-zerosugar h2 {
+    color:white;
+}
+.sugarfree {
+    background-color: rgb(0, 158, 223);
+}
+.monster {
+    background-color:#b0e569;;
+}
+.monster-zerosugar {
+    background-color:#b2d5e5;
+}
+.rockstar-original {
+    background-color: rgb(253, 217, 73);
+}
+.rockstar-sugarfree {
+    background-color: black;
+    color:white;
+}
+.rockstar-berry {
+    background-color:rgb(242, 193, 242);
+    color:rgb(97, 1, 97);
+}
+.rockstar-kiwi {
+    background-color:rgb(132, 199, 31);
+    color:white;    
 }

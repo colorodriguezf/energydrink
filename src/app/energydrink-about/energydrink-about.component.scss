@@ -1,19 +1,21 @@
 body{
     height: 100%; 
     font-family: 'Noto Sans', sans-serif;
-    background-color: #ab4493; 
+    background-color: #ab4493;
   }
-  
-  
+ 
   .contact_form{  
-    width: 460px; 
+    width: 700px;
     height: auto;
     margin: 80px auto;
-    border-radius: 10px;  
+    border-radius: 10px;
     padding-top: 30px;
-    padding-bottom: 20px;  
-    background-color: #fbfbfb; 
-    padding-left: 30px; 
+    padding-bottom: 20px;
+    background-color: #f2d8d8;
+    padding-left: 123px;
+    box-shadow: 8px 7px 8px -2px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 8px 7px 8px -2px rgba(0,0,0,0.3);
+    -moz-box-shadow: 8px 7px 8px -2px rgba(0,0,0,0.3);  
   }
   
   
@@ -48,7 +50,8 @@ body{
   
   label{
     display: block; 
-    float: center;  
+    float: center;
+    font-size:20px;
   }
   
   
@@ -59,7 +62,7 @@ body{
     margin-bottom: 20px; 
     margin-top: 10px;   
     text-transform: uppercase;
-    background-color: #ab4493; 
+    background-color: #b6469c; 
     border-color: #ab4493; 
     border-style: solid; 
     border-radius: 10px;  
@@ -67,10 +70,18 @@ body{
     cursor: pointer;
   }
   
-  
-  button p{
-    color: #fff; 
-  }
+ #enviar {
+  color: white;
+ }
+ #enviar:hover {
+  background-color: #a03988; 
+ }
+ #enviar:active {
+  background-color: #8f2777;
+  transform: translateY(4px);
+  border:none;
+  box-shadow: 4px 7px 5px -1px rgba(0,0,0,0.3);
+ }
   
   
   span{
@@ -89,6 +100,10 @@ body{
     text-align: letf; 
     padding-bottom: 20px; 
     color: #ab4493;
+    text-shadow: -1px -1px 1px #aaa,
+             0px 4px 1px rgba(0,0,0,0.5),
+             4px 4px 5px rgba(0,0,0,0.7),
+             0px 0px 7px rgba(0,0,0,0.4);
   }
   
   
@@ -117,7 +132,7 @@ body{
   
   .formulario input:focus{
     outline:0;
-    border: 1px solid #97d848;
+    border: 1px solid #97e33a;
   }
   
   
